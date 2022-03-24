@@ -52,12 +52,101 @@ h6 {
   isolation: isolate;
 }
 
+main {
+  width: 82%;
+}
+
 .attribution {
   font-size: 1rem;
   text-align: center;
 }
 .attribution a {
   color: #3e52a3;
+}
+
+.avatar {
+  height: 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.bg-blackish-blue {
+  background-color: #19212e;
+}
+
+.bg-grayish-blue {
+  background-color: #48556a;
+}
+
+.bg-violet {
+  background-color: #7541c8;
+}
+
+.bg-white-1 {
+  background-color: white;
+}
+
+.card-1 {
+  border-radius: 0.75rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.container-main {
+  background-color: #ecf2f8;
+}
+
+.heading {
+  font-size: 1.55rem;
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.text-gray-100 {
+  color: #19212e;
+}
+
+.text-gray-70 {
+  color: rgba(25, 33, 46, 0.7);
+}
+
+.text-gray-50 {
+  color: rgba(25, 33, 46, 0.5);
+}
+
+.text-white-100 {
+  color: white;
+}
+
+.text-white-70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.verified {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    height: auto;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  .card-1 {
+    margin-bottom: 2rem;
+  }
+
+  .container-main {
+    padding: 5rem 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
