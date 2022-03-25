@@ -39,7 +39,10 @@ main {
 }
 
 .bg-violet {
-  background-color: $moderate-violet;
+  background: url("../images/bg-pattern-quotation.svg"), $moderate-violet;
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  background-size: 9.5rem;
 }
 
 .bg-white-1 {
@@ -91,7 +94,7 @@ main {
   font-size: 0.85rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 991px) {
   body {
     height: auto;
   }
@@ -100,11 +103,16 @@ main {
     width: 95%;
   }
 
+  .bg-violet {
+    background-position-x: 95%;
+    background-size: 9rem;
+  }
+
   .card-1 {
     margin-bottom: 2rem;
   }
 
   .container-main {
-    padding: 5rem 0;
+    padding: 5rem 0.5rem;
   }
 }
