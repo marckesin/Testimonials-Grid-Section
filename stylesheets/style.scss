@@ -54,8 +54,33 @@ main {
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
+.container-grid {
+  display: grid;
+  grid-auto-columns: 2fr;
+  grid-template-areas:
+    "c-1 c-1 c-2 c-5"
+    "c-3 c-4 c-4 c-5";
+  gap: 1.5rem;
+}
+
 .container-main {
   background-color: $light-grayish-blue;
+}
+
+.c-1 {
+  grid-area: c-1;
+}
+.c-2 {
+  grid-area: c-2;
+}
+.c-3 {
+  grid-area: c-3;
+}
+.c-4 {
+  grid-area: c-4;
+}
+.c-5 {
+  grid-area: c-5;
 }
 
 .heading {
@@ -108,11 +133,34 @@ main {
     background-size: 9rem;
   }
 
-  .card-1 {
-    margin-bottom: 2rem;
+  // .container-grid {
+  //   grid-template-areas:
+  //     "c-1"
+  //     "c-2"
+  //     "c-3"
+  //     "c-4"
+  //     "c-5";
+  // }
+
+  .container-grid {
+    grid-template-areas:
+      "c-1 c-2"
+      "c-3 c-3"
+      "c-4 c-5";
+  }
+}
+
+@media (max-width: 768px) {
+  .container-grid {
+    grid-template-areas:
+      "c-1"
+      "c-2"
+      "c-3"
+      "c-4"
+      "c-5";
   }
 
   .container-main {
-    padding: 5rem 0.5rem;
+    padding: 5rem 1rem;
   }
 }
